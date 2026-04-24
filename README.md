@@ -97,18 +97,18 @@ In auto mode the plugin generates a `robots.txt` at the document root. The file 
 
 The **Short URLs indexing** option (admin → Options → robots.txt) controls the directive used for each short URL:
 
-| Value | Directive | Effect |
-|---|---|---|
-| **Disallow** *(default)* | `Disallow: /keyword` | Google skips the redirect page and indexes the destination directly — saves crawl budget |
-| **Allow** | `Allow: /keyword` | Googlebot crawls the branded redirect page before following to the destination |
+| Value                    | Directive            | Effect                                                                                   |
+| ------------------------ | -------------------- | ---------------------------------------------------------------------------------------- |
+| **Disallow** _(default)_ | `Disallow: /keyword` | Google skips the redirect page and indexes the destination directly — saves crawl budget |
+| **Allow**                | `Allow: /keyword`    | Googlebot crawls the branded redirect page before following to the destination           |
 
 ### Redirections
 
 Optional redirect rules injected into the generated `.htaccess` (auto mode, Apache with `mod_rewrite` only). Applied immediately when saved.
 
-| Option | Description |
-|---|---|
-| **HTTP → HTTPS** | Forces all `http://` requests to `https://` (301). Skip if your server or CDN already handles this. |
+| Option            | Description                                                                                                                                                                                                                                                                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **HTTP → HTTPS**  | Forces all `http://` requests to `https://` (301). Skip if your server or CDN already handles this.                                                                                                                                                                                                                                                     |
 | **WWW canonical** | Redirects the alternate www variant to the canonical domain. Direction is auto-detected from `YOURLS_SITE`: a non-www site redirects `www.example.com → example.com`, a www site redirects `example.com → www.example.com`. The redirect target always uses the scheme from `YOURLS_SITE`. When combined with HTTPS, both are resolved in a single 301. |
 
 ### Features
@@ -195,4 +195,4 @@ MIT
 
 ## Author
 
-[Neanrie](https://github.com/neanrie)
+[Sangcent](https://github.com/sangcent)

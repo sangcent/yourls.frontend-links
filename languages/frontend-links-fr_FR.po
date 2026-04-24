@@ -1,12 +1,12 @@
 # French translation for Frontend Links
-# Copyright (C) 2025 Neanrie
+# Copyright (C) 2025 Sangcent
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Frontend Links 1.0\n"
 "POT-Creation-Date: 2026-02-12\n"
 "PO-Revision-Date: 2026-02-12 17:22+0100\n"
-"Last-Translator: Neanrie <contact@github.com/neanrie>\n"
+"Last-Translator: Sangcent <contact@github.com/sangcent>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"

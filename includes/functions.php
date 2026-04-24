@@ -605,7 +605,7 @@ function fl_fetch_target_meta(string $url): array
  */
 function fl_inject_generator(string $html): string
 {
-    $tag = '<meta name="generator" content="Frontend Links ' . FL_VERSION . ' by Neanrie @ github.com/neanrie">';
+    $tag = '<meta name="generator" content="Frontend Links ' . FL_VERSION . ' by Sangcent @ github.com/sangcent">';
     return str_replace('</head>', $tag . "\n</head>", $html);
 }
 

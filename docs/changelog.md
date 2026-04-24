@@ -46,7 +46,7 @@ All notable changes to Frontend Links are documented here.
   - **HTTP → HTTPS**: `RewriteCond %{HTTPS} off` → `https://%{HTTP_HOST}%{REQUEST_URI}` (301).
   - **WWW canonical**: direction auto-detected from `YOURLS_SITE` (www site → redirect non-www → www, non-www site → redirect www → non-www). Redirect target always uses the scheme from `YOURLS_SITE`, so `http://www.example.com` is correctly redirected to `https://example.com` without a double hop.
   - **Combined rule**: when both HTTPS and WWW are active, a single `301` handles all variants (e.g. `http://www.example.com` → `https://example.com` in one redirect).
-  - Admin UI: HTTPS checkbox + WWW checkbox with canonical direction shown inline (`www.github.com/neanrie → github.com/neanrie — auto-detected from YOURLS_SITE`).
+  - Admin UI: HTTPS checkbox + WWW checkbox with canonical direction shown inline (`www.github.com/sangcent → github.com/sangcent — auto-detected from YOURLS_SITE`).
 
 ## [1.4] - 2026-02-19
 
@@ -65,9 +65,9 @@ All notable changes to Frontend Links are documented here.
 
 - **Theme system**: themes live in `themes/<slug>/` with a `theme.json` manifest, `templates/` (home, redirect, 404) and `assets/`. Active theme is selected from the Options panel in the admin.
 - **Default theme**: minimal responsive design using CSS custom properties — automatically adapts to light/dark system preference via `prefers-color-scheme`.
-- **Neanrie Original theme**: previous design preserved as a dedicated theme (dark glassmorphism with particle system).
-- **Dark mode** for the default theme — all colors defined as CSS variables, a single `@media (prefers-color-scheme: dark)` block overrides the root variables, no CSS duplication.
-- **Generator meta tag**: `<meta name="generator" content="Frontend Links 1.3 by github.com/neanrie">` injected via output buffering on every frontend page (home, redirect, 404), independent of the active theme.
+- **Sangcent Original theme**: previous design preserved as a dedicated theme (dark glassmorphism with particle system).
+- **Dark mode** for the default theme — all colors defined as CSS custom properties, a single `@media (prefers-color-scheme: dark)` block overrides the root variables, no CSS duplication.
+- **Generator meta tag**: `<meta name="generator" content="Frontend Links 1.3 by github.com/sangcent">` injected via output buffering on every frontend page (home, redirect, 404), independent of the active theme.
 - **PHP version & extensions** displayed in the Information panel with green/red status indicators (`fileinfo`, `curl`).
 - **Uploads `.htaccess` auto-generation**: `fl_write_uploads_htaccess()` generates the security file at activation with the correct `RewriteBase` for root and subdirectory installs. No longer a static committed file.
 
@@ -95,7 +95,7 @@ All notable changes to Frontend Links are documented here.
 ### Changed
 
 - Admin page renamed to "Frontend Administration".
-- Author in meta tags is now the shortener domain (e.g. `github.com/neanrie`).
+- Author in meta tags is now the shortener domain (e.g. `github.com/sangcent`).
 - All CSS and JS externalized to separate asset files (CSP compliant with YOURLS 1.10+).
 - New templates directory: `home.php`, `admin.php`, `redirect.php`, `404.php`.
 
